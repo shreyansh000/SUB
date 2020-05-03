@@ -22,7 +22,9 @@ triggerer = '.destroy'
  
 # Gif/Images
 files = ['path\to\file\giphy1.mp4', 'path\to\file\destroyib\giphy2.mp4']
- 
+id = Config.api_id
+hash = Config.api_hash
+string = Config.string_session
  
 @events.register(events.NewMessage)
 async def handler(event):
@@ -34,7 +36,7 @@ async def handler(event):
  
  
 # Change StringSession as per your need
-client = TelegramClient(StringSession(string), id, hash', proxy=None)
+client = TelegramClient(StringSession(string), id, hash, proxy=None)
  
 with client:
    # This remembers the events.NewMessage we registered before
