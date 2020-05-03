@@ -1,0 +1,24 @@
+{
+  "name": "SUB",
+  "description": "Time to spam",
+  "logo": "",
+  "keywords": [
+    "telegram",
+    "spam"
+  ],
+  
+  "env": {
+    
+    
+    "api_id": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "api_hash": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "string_session": {
+      "description": "Get this value by running python3 GenerateStringSession.py locally",
+      "value": ""
+    },
