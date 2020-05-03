@@ -22,7 +22,7 @@
       "description": "Get this value by running python3 GenerateStringSession.py locally",
       "value": ""
     }
-  }
+  },
   "buildpacks": [{
     "url": "heroku/python"
   }]
