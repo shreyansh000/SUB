@@ -9,6 +9,7 @@ import os
 import sys
 import time
 import logging
+from SUB import Config
  
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
