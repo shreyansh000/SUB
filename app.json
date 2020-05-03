@@ -19,7 +19,7 @@
       "value": ""
     },
     "string_session": {
-      "description": "Get this value by running python3 GenerateStringSession.py locally",
+      "description": "Get this value by running python3 string_session.py",
       "value": ""
     }
   },
