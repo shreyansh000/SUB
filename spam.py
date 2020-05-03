@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 triggerer = '.destroy'
  
 # Gif/Images
-files = ['path\to\file\giphy1.mp4', 'path\to\file\destroyib\giphy2.mp4']
+files = ['gif.gif', 'jj.mp4']
 id = Config.api_id
 hash = Config.api_hash
 string = Config.string_session
