@@ -33,7 +33,7 @@ async def handler(event):
         # for i in range(3): # use for loop for test
         while True:
             for file in files:
-                await client.send_file(event.original_update.chat_id, file)
+                await client.send_file(event.chat_id, file)
  
  
 # Change StringSession as per your need
