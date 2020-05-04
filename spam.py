@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
  
  
 triggerer = '.destroy'
+stop = '.stop'
  
 # Gif/Images
 files = ['gif.gif', 'jj.mp4']
@@ -34,6 +35,8 @@ async def handler(event):
         while True:
             for file in files:
                 await client.send_file(event.chat_id, file)
+                if event.raw_text.lower().startswith(stop):
+                            break
  
  
 # Change StringSession as per your need
@@ -43,5 +46,5 @@ with client:
    # This remembers the events.NewMessage we registered before
    client.add_event_handler(handler)
  
-   print('(Press Ctrl+C to stop this)')
+   print('(Press Ctrl+C to stop this or do .stop in a chat)')
    client.run_until_disconnected()
